@@ -1,0 +1,123 @@
+*Html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships - VaultofCodes</title>
+    <link rel="stylesheet" href="assignment-2.css">
+</head>
+<body>
+    <h1>Internships</h1>
+    <div class="internship-grid">
+        <div class="internship-card">
+            <h2>Web Development Internship Program</h2>
+            <ul>
+                <li>Duration: 1 month/2 months</li>
+                <li>Location: Virtual</li>
+                <li>Stipend: -</li>
+                <li>Start date: 05/11/2023</li>
+            </ul>
+            <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="internship-card">
+            <h2>App Development Internship Program</h2>
+            <ul>
+<li>Duration: 1 month/2 months</li>
+                <li>Location: Virtual</li>
+                <li>Stipend: -</li>
+                <li>Start date: 05/11/2023</li>
+            </ul>
+            <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="internship-card">
+            <h2>Python Programming Internship Program</h2>
+            <ul>
+                <li>Duration: 1 month/2 months</li>
+                <li>Location: Virtual</li>
+                <li>Stipend: -</li>
+                <li>Start date: 05/11/2023</li>
+            </ul>
+            <a href="#" class="view-details">View Details</a>
+        </div>
+        <div class="internship-card">
+            <h2>Java Programming Internship Program</h2>
+            <ul>
+                <li>Duration: 1 month/2 months</li>
+                <li>Location: Virtual</li>
+                <li>Stipend: -</li>
+                <li>Start date: 05/11/2023</li>
+            </ul>
+            <a href="#" class="view-details">View Details</a>
+   </div>
+    </div>
+</body>
+</html>
+
+*CSS
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+.internship-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    height: 50px;
+width: 50%;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+.internship-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+.internship-card:hover {
+    transform: translateY(-5px);
+}
+.internship-card h2 {
+    color: #3498db;
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+.internship-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+.internship-card li {
+margin-bottom: 8px;
+}
+.view-details {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+.view-details:hover {
+    background-color: #2980b9;
+}
+@media (max-width: 600px) {
+    .internship-grid {
+        grid-template-columns: 1fr;
+    }
+}
